@@ -15,8 +15,7 @@ public class RecusrsionSolution {
         if (arr1[n - 1] == arr2[m - 1])
             return 1 + commonSubsequenceLenght(arr1, arr2, n - 1, m - 1);
         else
-            return 0;
-            //return Math.max(commonSubsequenceLenght(arr1, arr2, n, m - 1), commonSubsequenceLenght(arr1, arr2, n - 1, m));
+            return Math.max(commonSubsequenceLenght(arr1, arr2, n, m - 1), commonSubsequenceLenght(arr1, arr2, n - 1, m));
     }
 
 }
